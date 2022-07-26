@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: car-driver-springboot-api
+  description: An API that interacts with cars and drivers in an in memory database.
+spec:
+  type: openapi
+  lifecycle: production
+  owner: ameer-hcl
+  definition:
+    $text: https://github.com/ameer-hcl/tutorial-service-backend/blob/main/api-docs.yaml
