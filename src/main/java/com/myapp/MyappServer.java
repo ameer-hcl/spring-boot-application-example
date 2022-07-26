@@ -1,6 +1,9 @@
 package com.myapp;
 
 import com.myapp.util.LoggingInterceptor;
+
+import io.swagger.v3.oas.models.OpenAPI;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -42,6 +45,10 @@ public class MyappServer extends WebMvcConfigurerAdapter
             .apiInfo(generateApiInfo());
     }
 
+    @Bean
+    public OpenAPI springShopOpenAPI() {
+        return new OpenAPI();
+    }
 
     private ApiInfo generateApiInfo()
     {
