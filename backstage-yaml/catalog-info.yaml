@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: ameer-hcl
   definition:
-    $text: https://github.com/ameer-hcl/tutorial-service-backend/blob/main/api-docs.yaml
+    $text: https://github.com/ameer-hcl/spring-boot-application-example/blob/master/backstage-yaml/api-definition.json
